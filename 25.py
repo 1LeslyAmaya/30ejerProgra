@@ -1,5 +1,7 @@
-a = 1
-for a in range (1,51):
-    if a % 1 == 0 or a % a == 0:
+for a in range(2, 51):        
+    contador = 0                
+    for i in range(1, a + 1): 
+        if a % i == 0:
+            contador += 1      
+    if contador == 2:        
         print(a)
-    
